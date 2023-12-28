@@ -490,7 +490,7 @@
     "@octokit/openapi-types" "^19.1.0"
 
 "@papyonlab/eslint-config@file:/Users/faruk/codes/papyon-shared/packages/eslint":
-  version "1.0.0"
+  version "1.0.1"
   resolved "file:packages/eslint"
   dependencies:
     "@callstack/eslint-config" "^14.1.0"
