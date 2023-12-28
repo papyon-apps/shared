@@ -1,0 +1,35 @@
+{
+  "name": "@papyon/eslint-config",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "./base.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@callstack/eslint-config": "^14.1.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-unused-imports": "^3.0.0"
+  },
+  "devDependencies": {
+    "@papyon/tsconfig": "*",
+    "@types/eslint": "^8.44.7",
+    "eslint": "^8.55.0",
+    "typescript": "^5.1.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "./base.js"
+    ]
+  }
+}

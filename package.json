@@ -1,0 +1,11 @@
+{
+  "name": "@papyon/shared",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Papyon configs and packages",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}

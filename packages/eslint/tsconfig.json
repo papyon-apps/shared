@@ -1,0 +1,10 @@
+{
+  "extends": "@papyon/tsconfig/base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "composite": true,
+    "outDir": "dist"
+  },
+  "include": ["."],
+  "exclude": ["node_modules"]
+}
