@@ -11,7 +11,8 @@
     "release": "release-it"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "devDependencies": {
     "release-it": "^17.0.1"
