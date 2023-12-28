@@ -1,5 +1,5 @@
 {
-  "name": "@papyon/tsconfig",
+  "name": "@papyonlab/tsconfig",
   "description": "Shared TypeScript configuration for Papyon projects",
   "private": false,
   "version": "0.1.0",

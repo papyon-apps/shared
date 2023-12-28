@@ -1,5 +1,5 @@
 {
-  "extends": "@papyon/tsconfig/base.json",
+  "extends": "@papyonlab/tsconfig/base.json",
   "compilerOptions": {
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
     "composite": true,

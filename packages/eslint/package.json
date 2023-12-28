@@ -1,5 +1,5 @@
 {
-  "name": "@papyon/eslint-config",
+  "name": "@papyonlab/eslint-config",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
@@ -21,7 +21,7 @@
     "eslint-plugin-unused-imports": "^3.0.0"
   },
   "devDependencies": {
-    "@papyon/tsconfig": "*",
+    "@papyonlab/tsconfig": "*",
     "@types/eslint": "^8.44.7",
     "eslint": "^8.55.0",
     "typescript": "^5.1.6"
