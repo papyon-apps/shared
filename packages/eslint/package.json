@@ -1,13 +1,14 @@
 {
   "name": "@papyonlab/eslint-config",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "license": "MIT",
   "files": [
     "./base.js"
   ],
   "publishConfig": {
-    "registry": "https://registry.npmjs.org"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
