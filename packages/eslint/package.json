@@ -6,11 +6,15 @@
   "files": [
     "./base.js"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "scripts": {
     "clean": "rm -rf .turbo node_modules",
     "lint": "eslint .",
     "format": "prettier --check . --ignore-path ../../.gitignore",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "release": "release-it"
   },
   "dependencies": {
     "@callstack/eslint-config": "^14.1.0",
@@ -24,6 +28,7 @@
     "@papyonlab/tsconfig": "*",
     "@types/eslint": "^8.44.7",
     "eslint": "^8.55.0",
+    "release-it": "^17.0.1",
     "typescript": "^5.1.6"
   },
   "eslintConfig": {
