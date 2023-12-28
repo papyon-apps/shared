@@ -1,7 +1,7 @@
 {
   "name": "@papyonlab/eslint-config",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "files": [
     "./base.js"
