@@ -3,7 +3,9 @@
   "description": "Papyonlab's local build and release tool",
   "private": false,
   "version": "1.0.3",
-  "bin": "dist/index.js",
+  "bin": {
+    "papyonlab-submit": "dist/index.js"
+  },
   "files": [
     "dist"
   ],
