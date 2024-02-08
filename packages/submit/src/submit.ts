@@ -3,7 +3,7 @@
 import { exec } from "node:child_process";
 import { readdir } from "node:fs/promises";
 
-const DIR = ".";
+const [, , DIR] = process.argv;
 const PREFIX = "build-";
 
 type BuildFiles = {
@@ -33,6 +33,9 @@ function execp(cmd: string) {
 async function getLocalBuildFile(): Promise<BuildFiles | undefined> {
   try {
     const fileNames = await readdir(DIR);
+
+    console.log("Files found:", fileNames);
+
     const buildFiles = fileNames.filter((fileName) =>
       fileName.startsWith(PREFIX)
     );
