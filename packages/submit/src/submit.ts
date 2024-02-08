@@ -51,6 +51,12 @@ async function getLocalBuildFile(): Promise<BuildFiles | undefined> {
       console.log("No iOS build files found.");
     }
 
+    if (androidBuildFiles.length === 0 && iosBuildFiles.length === 0) {
+      console.error("No build files found. Exiting.");
+      process.exit(1);
+      return;
+    }
+
     return {
       android: androidBuildFiles[0],
       ios: iosBuildFiles[0],
