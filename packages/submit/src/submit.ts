@@ -34,8 +34,6 @@ async function getLocalBuildFile(): Promise<BuildFiles | undefined> {
   try {
     const fileNames = await readdir(DIR);
 
-    console.log("Files found:", fileNames);
-
     const buildFiles = fileNames.filter((fileName) =>
       fileName.startsWith(PREFIX)
     );
