@@ -2,7 +2,7 @@
   "name": "@papyonlab/submit",
   "description": "Papyonlab's local build and release tool",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": "dist/index.js",
   "scripts": {
     "build": "tsc",
