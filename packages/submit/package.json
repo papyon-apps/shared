@@ -4,7 +4,7 @@
   "private": false,
   "version": "1.0.5",
   "bin": {
-    "papyonlab-submit": "dist/index.js"
+    "papyonlab-submit": "./dist/submit.js"
   },
   "files": [
     "dist"
