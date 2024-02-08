@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { exec } from "node:child_process";
 import { readdir } from "node:fs/promises";
 

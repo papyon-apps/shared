@@ -2120,7 +2120,7 @@
     eslint-plugin-unused-imports "^3.0.0"
 
 "@papyonlab/submit@file:/Users/faruk/codes/papyon-shared/packages/submit":
-  version "1.0.3"
+  version "1.0.4"
   resolved "file:packages/submit"
 
 "@papyonlab/tsconfig@*", "@papyonlab/tsconfig@file:/Users/faruk/codes/papyon-shared/packages/typescript":
