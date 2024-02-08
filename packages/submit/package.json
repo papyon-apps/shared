@@ -2,7 +2,7 @@
   "name": "@papyonlab/submit",
   "description": "Papyonlab's local build and release tool",
   "private": false,
-  "version": "1.0.6",
+  "version": "1.0.7",
   "bin": {
     "papyonlab-submit": "./dist/submit.js"
   },
