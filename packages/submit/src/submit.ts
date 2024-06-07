@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 
 import { exec } from "node:child_process";
 import { readdir } from "node:fs/promises";
@@ -22,10 +23,10 @@ function execp(cmd: string) {
     });
 
     childProcess.stdout?.on("data", (data) =>
-      console.log("↩︎", data.toString())
+      console.log("↩︎", data.toString()),
     );
     childProcess.stderr?.on("data", (data) =>
-      console.error("stderr:", data.toString())
+      console.error("stderr:", data.toString()),
     );
   });
 }
@@ -35,11 +36,11 @@ async function getLocalBuildFile(): Promise<BuildFiles | undefined> {
     const fileNames = await readdir(DIR);
 
     const buildFiles = fileNames.filter((fileName) =>
-      fileName.startsWith(PREFIX)
+      fileName.startsWith(PREFIX),
     );
 
     const androidBuildFiles = buildFiles.filter((fileName) =>
-      fileName.endsWith(".aab")
+      fileName.endsWith(".aab"),
     );
 
     if (androidBuildFiles.length === 0) {
@@ -47,7 +48,7 @@ async function getLocalBuildFile(): Promise<BuildFiles | undefined> {
     }
 
     const iosBuildFiles = buildFiles.filter((fileName) =>
-      fileName.endsWith(".ipa")
+      fileName.endsWith(".ipa"),
     );
 
     if (iosBuildFiles.length === 0) {
@@ -101,7 +102,7 @@ async function checkMasterBranch() {
   const stdout = (await execp("git branch --show-current")) as string;
   if (!["master", "main"].includes(stdout.trim())) {
     console.error(
-      "Not on master branch. Switch to master or main branch. Aborting."
+      "Not on master branch. Switch to master or main branch. Aborting.",
     );
     process.exit(1);
   }
