@@ -20,6 +20,7 @@ const config = {
   ],
   reportUnusedDisableDirectives: true,
   rules: {
+    "no-console": "on",
     "no-unused-vars": "off",
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
