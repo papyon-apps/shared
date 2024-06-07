@@ -1,7 +1,6 @@
 {
   "name": "@papyonlab/tsconfig",
   "description": "Shared TypeScript configuration for Papyon projects",
-  "private": false,
   "version": "1.0.0",
   "files": [
     "base.json",
