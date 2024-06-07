@@ -13,8 +13,8 @@
     "release": "yarn build && release-it"
   },
   "devDependencies": {
+    "@papyonlab/eslint-config": "*",
     "@papyonlab/tsconfig": "*",
-    "@papyonlab/eslint": "*",
     "@types/eslint": "^8.44.7",
     "@types/node": "^20.11.16",
     "eslint": "^8.55.0",
