@@ -17,7 +17,7 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@callstack/eslint-config": "^14.1.0",
+    "@callstack/eslint-config": "^15.0.0",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
     "eslint": "^8.55.0",
