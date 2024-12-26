@@ -1,6 +1,6 @@
 /** @type {import("eslint").Linter.Config} */
 const config = {
-  extends: ["@callstack"],
+  extends: "@callstack/eslint-config/react",
   plugins: ["unused-imports"],
   parserOptions: {
     project: true,
