@@ -22,7 +22,7 @@
     "@typescript-eslint/parser": "^6.13.2",
     "eslint": "^8.55.0",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-unused-imports": "^4.1.4"
+    "eslint-plugin-unused-imports": "^3.0.0"
   },
   "devDependencies": {
     "@papyonlab/tsconfig": "*",
