@@ -1,27 +1,43 @@
 /** @type {import("eslint").Linter.Config} */
 const config = {
-  extends: ["@callstack"],
-  plugins: ["unused-imports"],
-  env: {
-    es2022: true,
-    node: true,
-  },
+  extends: [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@tanstack/query/recommended",
+    "eslint-config-prettier",
+  ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: true,
+    sourceType: "module",
+    ecmaVersion: "latest",
   },
-  ignorePatterns: [
-    "**/.eslintrc.cjs",
-    "**/*.config.js",
-    "**/*.config.cjs",
-    ".next",
-    "dist",
-    "pnpm-lock.yaml",
-  ],
-  reportUnusedDisableDirectives: true,
+  env: {
+    node: true,
+  },
+
+  ignorePatterns: ["node_modules", "dist", "build"],
+  plugins: ["simple-import-sort", "unused-imports", "prettier"],
   rules: {
-    "no-console": 2,
-    "no-unused-vars": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "off",
+    "react/prop-types": "off",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        args: "all",
+        argsIgnorePattern: "^_",
+        caughtErrors: "all",
+        caughtErrorsIgnorePattern: "^_",
+        destructuredArrayIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        ignoreRestSiblings: true,
+      },
+    ],
     "unused-imports/no-unused-imports": "error",
     "unused-imports/no-unused-vars": [
       "warn",
@@ -32,14 +48,7 @@ const config = {
         argsIgnorePattern: "^_",
       },
     ],
-    "react/react-in-jsx-scope": "off",
-    "react-native-a11y/has-valid-accessibility-ignores-invert-colors": "off",
-    "promise/prefer-await-to-then": "off",
-  },
-  settings: {
-    "import/resolver": {
-      typescript: {},
-    },
+    "no-console": "error",
   },
 };
 
